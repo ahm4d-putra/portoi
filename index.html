@@ -1,203 +1,654 @@
 <!DOCTYPE html>
 <html lang="id">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmad Putra Ramadhan</title>
-    <!-- fontawasome  google -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- google api -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-
-
-    <body>
-    <!-- Navigation bar -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="#home" class="logo">
-                <img src="images/logo.jpeg" alt="Logo Portofolio dengan inisial pengguna dalam lingkaran">
-                Ahmad Putra Ramadhan
-            </a>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Tech Stack</a></li>
-                <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
-                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
-
-    <!-- header -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Halo, Saya <span style="color: var(--secondary-color);">Ahmad Putra Ramadhan</span></h1>
-                <p>Seorang Pelajar dari Smkn 20 Jakarta, saya merupakan seorang pemula di bidang Web Development</p>
-                <div style="margin-top: 2rem;">
-                    <a href="#projects" style="background-color: var(--primary-color); color: white; padding: 0.75rem 1.5rem; border-radius: 30px; text-decoration: none; display: inline-block; margin-right: 1rem; transition: all 0.3s ease;">Lihat Projek</a>
-                    <a href="#contact" style="padding: 0.75rem 1.5rem; border-radius: 30px; text-decoration: none; display: inline-block; border: 2px solid var(--primary-color); color: var(--primary-color); transition: all 0.3s ease;">Hubungi Saya</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/backgr.jpeg" alt="Profil profesional dengan latar belakang abstrak modern">
-            </div>
-        </div>
-    </section>
-
-    <!-- bagiian tentang-->
-    <section id="about">
-        <h2>Tentang Saya</h2>
-        <div style="display: flex; gap: 2rem;">
-            <div style="flex: 1;">
-                <p>Perkenalkan saya Ahmad Putra Ramadhan, saya berumur 15 tahun, saya lahir di jakarta tepatnya di rumahsakit Fatmawati, saya terlahir di keluarga yang mempunyai kegemaran di dunia IT, mulai dari ayah saya hingga abang abang saya dirumah.</p>
-                <p>Sejak di sd, saya sudah bermain laptop yang diberikan oleh ayah saya, diwaktu itu saya hanya bermain main tidak jelas dan tidak tahu waktu, bermain game dan menonton vidio windah/ vidio youtuber lainya.</p>
-            </div>
-            <div style="flex: 1;">
-                <p>Pada saat kelas 7, saya memulai perjalanan di dunia percodingan mulai dari bahasa pertama yang saya pelajari yaitu Python, karena bahasa nya masih mudah dan syntax nya garibet, saya memulai beberapa project yang saya cantumkan dibawah, dikelas 1 smk saya fokuskan ke website develop, See You!</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- tech stack sectioon-->
-    <section id="skills">
-        <h2>Tech Stack</h2>
-        <p style="margin-bottom: 2rem;">Kemampuan teknis dan pengalaman saya dalam berbagai teknologi</p>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Typewriter.js -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/index.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                                         colors: {
+                         primary: '#1a1a1a',
+                         secondary: '#2d2d2d',
+                         dark: '#0f0f0f',
+                         light: '#f5f5f5',
+                         gray: '#9ca3af',
+                         accent: '#6366f1',
+                         gold: '#fbbf24',
+                     }
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
         
-        <div class="tech-stack">
-            <div class="skill">
-                <div class="skill-name">
-                    <span>HTML</span>
-                    <span>69%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-level" style="width: 60%;"></div>
-                </div>
-            </div>
-            
-            <div class="skill">
-                <div class="skill-name">
-                    <span>CSS</span>
-                    <span>50%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-level" style="width: 50%;"></div>
-                </div>
-            </div>
-            
-            <div class="skill">
-                <div class="skill-name">
-                    <span>JavaScript</span>
-                    <span>40%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-level" style="width: 50%;"></div>
-                </div>
-            </div>
-            
-            <div class="skill">
-                <div class="skill-name">
-                    <span>Python</span>
-                    <span>90%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-level" style="width: 90%;"></div>
-                </div>
-            </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                          /* Web Development Animated Background */
+         .code-background {
+             position: fixed;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             z-index: -1;
+             overflow: hidden;
+             background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #2d2d2d 100%);
+         }
+         
+         .floating-code {
+             position: absolute;
+             color: rgba(99, 102, 241, 0.3);
+             font-family: 'Courier New', monospace;
+             font-size: 16px;
+             font-weight: bold;
+             white-space: nowrap;
+             animation: float 20s linear infinite;
+             pointer-events: none;
+             text-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+         }
+         
+         .floating-code:nth-child(1) {
+             top: 10%;
+             left: -200px;
+             animation-delay: 0s;
+             animation-duration: 25s;
+         }
+         
+         .floating-code:nth-child(2) {
+             top: 30%;
+             left: -300px;
+             animation-delay: 5s;
+             animation-duration: 30s;
+         }
+         
+         .floating-code:nth-child(3) {
+             top: 50%;
+             left: -250px;
+             animation-delay: 10s;
+             animation-duration: 28s;
+         }
+         
+         .floating-code:nth-child(4) {
+             top: 70%;
+             left: -350px;
+             animation-delay: 15s;
+             animation-duration: 32s;
+         }
+         
+         .floating-code:nth-child(5) {
+             top: 20%;
+             left: -400px;
+             animation-delay: 20s;
+             animation-duration: 35s;
+         }
+         
+         .floating-code:nth-child(6) {
+             top: 80%;
+             left: -150px;
+             animation-delay: 25s;
+             animation-duration: 22s;
+         }
+         
+         .floating-code:nth-child(7) {
+             top: 15%;
+             left: -500px;
+             animation-delay: 30s;
+             animation-duration: 28s;
+         }
+         
+         .floating-code:nth-child(8) {
+             top: 45%;
+             left: -600px;
+             animation-delay: 35s;
+             animation-duration: 25s;
+         }
+         
+         .floating-code:nth-child(9) {
+             top: 75%;
+             left: -450px;
+             animation-delay: 40s;
+             animation-duration: 32s;
+         }
+         
+         .floating-code:nth-child(10) {
+             top: 25%;
+             left: -700px;
+             animation-delay: 45s;
+             animation-duration: 30s;
+         }
+         
+         .floating-code:nth-child(11) {
+             top: 65%;
+             left: -550px;
+             animation-delay: 50s;
+             animation-duration: 27s;
+         }
+         
+         .floating-code:nth-child(12) {
+             top: 35%;
+             left: -800px;
+             animation-delay: 55s;
+             animation-duration: 35s;
+         }
+         
+         @keyframes float {
+             0% {
+                 transform: translateX(0) translateY(0) rotate(0deg);
+                 opacity: 0;
+             }
+             10% {
+                 opacity: 0.3;
+             }
+             90% {
+                 opacity: 0.3;
+             }
+             100% {
+                 transform: translateX(calc(100vw + 500px)) translateY(-100px) rotate(360deg);
+                 opacity: 0;
+             }
+         }
+         
+         /* Matrix Rain Effect */
+         .matrix-rain {
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             pointer-events: none;
+         }
+         
+         .matrix-column {
+             position: absolute;
+             top: -100%;
+             color: rgba(99, 102, 241, 0.2);
+             font-family: 'Courier New', monospace;
+             font-size: 18px;
+             font-weight: bold;
+             line-height: 1;
+             animation: matrix-fall 8s linear infinite;
+             text-shadow: 0 0 5px rgba(99, 102, 241, 0.3);
+         }
+         
+         @keyframes matrix-fall {
+             0% {
+                 top: -100%;
+                 opacity: 0;
+             }
+             10% {
+                 opacity: 1;
+             }
+             90% {
+                 opacity: 1;
+             }
+             100% {
+                 top: 100%;
+                 opacity: 0;
+             }
+         }
+         
+         /* Glowing Orbs */
+         .glow-orb {
+             position: absolute;
+             border-radius: 50%;
+             background: radial-gradient(circle, rgba(99, 102, 241, 0.4) 0%, rgba(99, 102, 241, 0.1) 50%, rgba(99, 102, 241, 0.05) 80%, transparent 100%);
+             animation: glow-pulse 4s ease-in-out infinite;
+             pointer-events: none;
+             box-shadow: 0 0 30px rgba(99, 102, 241, 0.3);
+         }
+         
+         .glow-orb:nth-child(1) {
+             width: 200px;
+             height: 200px;
+             top: 20%;
+             left: 10%;
+             animation-delay: 0s;
+         }
+         
+         .glow-orb:nth-child(2) {
+             width: 150px;
+             height: 150px;
+             top: 60%;
+             right: 15%;
+             animation-delay: 2s;
+         }
+         
+         .glow-orb:nth-child(3) {
+             width: 100px;
+             height: 100px;
+             top: 80%;
+             left: 20%;
+             animation-delay: 4s;
+         }
+         
+         .glow-orb:nth-child(4) {
+             width: 120px;
+             height: 120px;
+             top: 40%;
+             left: 80%;
+             animation-delay: 6s;
+         }
+         
+         .glow-orb:nth-child(5) {
+             width: 80px;
+             height: 80px;
+             top: 90%;
+             left: 70%;
+             animation-delay: 8s;
+         }
+         
+         @keyframes glow-pulse {
+             0%, 100% {
+                 transform: scale(1);
+                 opacity: 0.3;
+             }
+             50% {
+                 transform: scale(1.2);
+                 opacity: 0.6;
+             }
+         }
+    </style>
+</head>
 
-    <!-- bagian project -->
-    <section id="projects">
-        <h2>Projek Terbaru</h2>
-        <p style="margin-bottom: 2rem;">Beberapa projek yang saya kerjakan</p>
+<body class="bg-dark text-light font-poppins">
+    <!-- Animated Web Development Background -->
+    <div class="code-background">
+        <!-- Floating Code Elements -->
+        <div class="floating-code">const developer = { name: 'Ahmad', skills: ['HTML', 'CSS', 'JS', 'Python'] };</div>
+        <div class="floating-code">function createPortfolio() { return 'Amazing Website'; }</div>
+        <div class="floating-code">if (passion === 'coding') { success = true; }</div>
+        <div class="floating-code">npm install creativity && npm install innovation</div>
+        <div class="floating-code">git commit -m "Building the future with code"</div>
+        <div class="floating-code">while (learning) { grow(); improve(); }</div>
+        <div class="floating-code">console.log('Hello, World!');</div>
+        <div class="floating-code">const future = await buildAmazingThings();</div>
+        <div class="floating-code">let creativity = Infinity;</div>
+        <div class="floating-code">function solveProblems() { return 'Innovation'; }</div>
+        <div class="floating-code">const dreams = ['Web Dev', 'AI', 'Future']; dreams.forEach(dream => pursue(dream));</div>
+        <div class="floating-code">/* This is where magic happens */</div>
         
-        <div class="projects-container">
-            <!-- Page github1 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/samp.jpg" alt="Tampilan dashboard admin dengan grafik dan statistik">
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">Sistem BanAll GTA SA:MP</h3>
-                    <p class="project-description">Sebuah Tekhnologi dasar Lua. yang memungkinkan player mem banned semua player di dalam server (admin require) </p>
-                    <div class="project-links">
-                        <a href="https://github.com/ahm4d-putra/Banned-All" class="project-link" target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- page github2-->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/judjud.jpg" alt="Antarmuka e-commerce dengan produk yang ditampilkan dalam grid">
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">Demonstrasi Judi Online</h3>
-                    <p class="project-description">Sebuah sosialisasi penanggulangan judi online, demo ini menggunakan python berbasis android.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/ahm4d-putra/SimulasiJudol" class="project-link" target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                    </div>
-                </div>
-            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- bagian kontak -->
-    <section id="contact">
-        <h2>Hubungi Saya</h2>
-        <p style="margin-bottom: 2rem;">Silakan hubungi saya melalui formulir berikut atau media sosial</p>
+        <!-- Matrix Rain Effect -->
+        <div class="matrix-rain" id="matrix-rain"></div>
         
-        <div class="contact-container">
-            <div class="contact-info">
-                <form id="contact-form" style="display: grid; gap: 1rem;">
-                    <input type="text" placeholder="Nama Anda" style="padding: 1rem; border: 1px solid #000000; border-radius: 8px;" required>
-                    <input type="email" placeholder="Email Anda" style="padding: 1rem; border: 1px solid #0a0a0a; border-radius: 8px;" required>
-                    <textarea placeholder="Pesan Anda" style="padding: 1rem; border: 1px solid #000000; border-radius: 8px; min-height: 150px;" required></textarea>
-                    <button type="submit" style="background-color: var(--primary-color); color: white; padding: 1rem; border: none; border-radius: 8px; cursor: pointer; transition: all 0.3s ease;">Kirim Pesan</button>
-                </form>
-            </div>
-            <div class="contact-info">
-                <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> ahmad.putra494@smp.belajar.id</p>
-                <p><i class="fas fa-phone" style="margin-right: 10px;"></i> +62 895-0152-4223</p>
-                
-                <div class="social-links">
-                    <a href="https://instagram.com/ahmaddd9_" class="social-link" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://github.com/ahm4d-putra" class="social-link" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    </a>
+        <!-- Glowing Orbs -->
+        <div class="glow-orb"></div>
+        <div class="glow-orb"></div>
+        <div class="glow-orb"></div>
+        <div class="glow-orb"></div>
+        <div class="glow-orb"></div>
+    </div>
+         <!-- Navigation bar -->
+     <nav class="fixed top-0 left-0 w-full bg-dark/95 backdrop-blur-sm shadow-lg z-50 transition-all duration-300 border-b border-gray-800">
+         <div class="max-w-6xl mx-auto px-8 py-4">
+             <div class="flex justify-between items-center">
+                 <a href="#home" class="text-2xl font-bold text-gold flex items-center">
+                     <img src="images/logo.jpeg" alt="Logo Portofolio dengan inisial pengguna dalam lingkaran" class="w-10 h-10 rounded-full mr-3">
+                     Ahmad Putra Ramadhan
+                 </a>
+                 <ul class="hidden md:flex space-x-8">
+                     <li><a href="#home" class="text-light font-medium hover:text-accent transition-colors duration-300 flex items-center gap-2"><i class="fas fa-home"></i> Home</a></li>
+                     <li><a href="#about" class="text-light font-medium hover:text-accent transition-colors duration-300 flex items-center gap-2"><i class="fas fa-user"></i> About</a></li>
+                     <li><a href="#skills" class="text-light font-medium hover:text-accent transition-colors duration-300 flex items-center gap-2"><i class="fas fa-code"></i> Tech Stack</a></li>
+                     <li><a href="#projects" class="text-light font-medium hover:text-accent transition-colors duration-300 flex items-center gap-2"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                     <li><a href="#contact" class="text-light font-medium hover:text-accent transition-colors duration-300 flex items-center gap-2"><i class="fas fa-envelope"></i> Contact</a></li>
+                 </ul>
+                                 <div class="md:hidden cursor-pointer text-2xl text-light" id="hamburger">
+                     <i class="fas fa-bars"></i>
+                 </div>
+             </div>
+         </div>
+     </nav>
+ 
+     <!-- Mobile Menu Overlay -->
+     <div class="md:hidden fixed top-0 left-0 w-full h-full bg-black/70 z-40 opacity-0 invisible transition-all duration-300" id="mobile-overlay"></div>
+     
+     <!-- Mobile Menu Sidebar -->
+     <div class="md:hidden fixed top-0 right-0 w-64 h-full bg-secondary shadow-2xl transform translate-x-full transition-transform duration-300 z-50 border-l border-gray-800" id="mobile-menu">
+         <div class="flex justify-between items-center p-6 border-b border-gray-800">
+             <h3 class="text-lg font-semibold text-gold">Menu</h3>
+             <button class="text-2xl text-gray-400 hover:text-accent transition-colors" id="close-menu">
+                 <i class="fas fa-times"></i>
+             </button>
+         </div>
+         <ul class="py-4">
+             <li><a href="#home" class="block px-6 py-3 text-light font-medium hover:text-accent hover:bg-gray-800 transition-colors duration-300 flex items-center gap-3"><i class="fas fa-home"></i> Home</a></li>
+             <li><a href="#about" class="block px-6 py-3 text-light font-medium hover:text-accent hover:bg-gray-800 transition-colors duration-300 flex items-center gap-3"><i class="fas fa-user"></i> About</a></li>
+             <li><a href="#skills" class="block px-6 py-3 text-light font-medium hover:text-accent hover:bg-gray-800 transition-colors duration-300 flex items-center gap-3"><i class="fas fa-code"></i> Tech Stack</a></li>
+             <li><a href="#projects" class="block px-6 py-3 text-light font-medium hover:text-accent hover:bg-gray-800 transition-colors duration-300 flex items-center gap-3"><i class="fas fa-project-diagram"></i> Projects</a></li>
+             <li><a href="#contact" class="block px-6 py-3 text-light font-medium hover:text-accent hover:bg-gray-800 transition-colors duration-300 flex items-center gap-3"><i class="fas fa-envelope"></i> Contact</a></li>
+         </ul>
+     </div>
+
+    <!-- Header -->
+    <section id="home" class="min-h-screen flex items-center pt-20">
+        <div class="max-w-6xl mx-auto px-8">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                                 <div class="flex-1">
+                     <h1 class="text-5xl lg:text-6xl font-bold mb-4 text-gold">
+                         <span id="typing-text">Halo, Saya <span class="text-accent">Ahmad Putra Ramadhan</span></span>
+                     </h1>
+                     <p class="text-gray text-lg mb-8 leading-relaxed" id="typing-description">
+                         Seorang Pelajar dari Smkn 20 Jakarta, saya merupakan seorang pemula di bidang Web Development
+                     </p>
+                     <div class="flex flex-col sm:flex-row gap-4">
+                         <a href="#projects" class="bg-accent text-white px-6 py-3 rounded-full text-decoration-none inline-block transition-all duration-300 hover:bg-accent/80 transform hover:-translate-y-1 shadow-lg shadow-accent/25">
+                             Lihat Projek
+                         </a>
+                         <a href="#contact" class="px-6 py-3 rounded-full text-decoration-none inline-block border-2 border-accent text-accent transition-all duration-300 hover:bg-accent hover:text-white transform hover:-translate-y-1">
+                             Hubungi Saya
+                         </a>
+                     </div>
+                 </div>
+                <div class="flex-1 flex justify-center">
+                    <img src="images/backgr.jpeg" alt="Profil profesional dengan latar belakang abstrak modern" class="w-full max-w-md rounded-3xl shadow-2xl">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- bawahan -->
-    <footer>
-        <p>&copy; 2025, Ahmad Putra Ramadhan</p>
-    </footer>
+    <!-- Bagian tentang -->
+    <section id="about" class="py-20 px-8">
+        <div class="max-w-6xl mx-auto">
+                         <h2 class="text-4xl lg:text-5xl font-bold mb-8 text-gold relative inline-block">
+                 Tentang Saya
+                 <div class="absolute bottom-0 left-0 w-12 h-1 bg-accent rounded"></div>
+             </h2>
+             <div class="grid lg:grid-cols-2 gap-12">
+                 <div>
+                     <h3 class="text-2xl font-semibold mb-6 text-accent">Cerita Saya</h3>
+                     <p class="text-gray leading-relaxed mb-4">
+                         Perkenalkan saya Ahmad Putra Ramadhan, saya berumur 15 tahun, saya lahir di jakarta tepatnya di rumahsakit Fatmawati, saya terlahir di keluarga yang mempunyai kegemaran di dunia IT, mulai dari ayah saya hingga abang abang saya dirumah.
+                     </p>
+                     <p class="text-gray leading-relaxed mb-4">
+                         Sejak di sd, saya sudah bermain laptop yang diberikan oleh ayah saya, diwaktu itu saya hanya bermain main tidak jelas dan tidak tahu waktu, bermain game dan menonton vidio windah/ vidio youtuber lainya.
+                     </p>
+                     <p class="text-gray leading-relaxed">
+                         Pada saat kelas 7, saya memulai perjalanan di dunia percodingan mulai dari bahasa pertama yang saya pelajari yaitu Python, karena bahasa nya masih mudah dan syntax nya garibet, saya memulai beberapa project yang saya cantumkan dibawah, dikelas 1 smk saya fokuskan ke website develop, See You!
+                     </p>
+                 </div>
+                 <div>
+                     <h3 class="text-2xl font-semibold mb-6 text-accent">Timeline Pendidikan</h3>
+                     <div class="space-y-6">
+                         <div class="relative pl-12 pb-8">
+                             <!-- Timeline Line -->
+                             <div class="absolute left-0 top-0 w-0.5 h-full bg-gradient-to-b from-accent to-gold"></div>
+                             <!-- Timeline Dot -->
+                             <div class="absolute left-0 top-0 w-4 h-4 bg-accent border-4 border-dark rounded-full transform -translate-x-2"></div>
+                             <!-- Content -->
+                             <div class="bg-secondary p-6 rounded-lg shadow-lg border border-gray-800">
+                                 <div class="flex justify-between items-start mb-2">
+                                     <h4 class="font-semibold text-gold">SMKN 20 Jakarta</h4>
+                                     <span class="text-sm text-gray bg-gray-800 px-2 py-1 rounded">2024 - Sekarang</span>
+                                 </div>
+                                 <p class="text-gray text-sm">Jurusan Rekayasa Perangkat Lunak (RPL)</p>
+                                 <p class="text-gray text-sm mt-2">Fokus pada Web Development dan Programming</p>
+                             </div>
+                         </div>
+                         
+                         <div class="relative pl-12 pb-8">
+                             <!-- Timeline Line -->
+                             <div class="absolute left-0 top-0 w-0.5 h-full bg-gradient-to-b from-accent to-gold"></div>
+                             <!-- Timeline Dot -->
+                             <div class="absolute left-0 top-0 w-4 h-4 bg-accent border-4 border-dark rounded-full transform -translate-x-2"></div>
+                             <!-- Content -->
+                             <div class="bg-secondary p-6 rounded-lg shadow-lg border border-gray-800">
+                                 <div class="flex justify-between items-start mb-2">
+                                     <h4 class="font-semibold text-gold">SMP Negeri 56 Jakarta</h4>
+                                     <span class="text-sm text-gray bg-gray-800 px-2 py-1 rounded">2021 - 2024</span>
+                                 </div>
+                                 <p class="text-gray text-sm">Mulai belajar programming dengan Python</p>
+                                 <p class="text-gray text-sm mt-2">Membuat project pertama di kelas 7</p>
+                             </div>
+                         </div>
+                         
+                         <div class="relative pl-12 pb-8">
+                             <!-- Timeline Line -->
+                             <div class="absolute left-0 top-0 w-0.5 h-full bg-gradient-to-b from-accent to-gold"></div>
+                             <!-- Timeline Dot -->
+                             <div class="absolute left-0 top-0 w-4 h-4 bg-accent border-4 border-dark rounded-full transform -translate-x-2"></div>
+                             <!-- Content -->
+                             <div class="bg-secondary p-6 rounded-lg shadow-lg border border-gray-800">
+                                 <div class="flex justify-between items-start mb-2">
+                                     <h4 class="font-semibold text-gold">SD Negeri 01 </h4>
+                                     <span class="text-sm text-gray bg-gray-800 px-2 py-1 rounded">2015 - 2021</span>
+                                 </div>
+                                 <p class="text-gray text-sm">Pertama kali mengenal komputer dan teknologi</p>
+                                 <p class="text-gray text-sm mt-2">Mulai tertarik dengan dunia IT</p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </section>
 
-    <!-- pencetan back to top -->
-    <a href="#home" class="back-to-top" id="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </a>
+         <!-- Tech Stack Section -->
+     <section id="skills" class="py-20 px-8">
+         <div class="max-w-6xl mx-auto">
+             <h2 class="text-4xl lg:text-5xl font-bold mb-8 text-gold relative inline-block">
+                 Tech Stack
+                 <div class="absolute bottom-0 left-0 w-12 h-1 bg-accent rounded"></div>
+             </h2>
+             <p class="text-gray text-lg mb-8">Kemampuan teknis dan pengalaman saya dalam berbagai teknologi</p>
+             
+             <div class="bg-secondary rounded-2xl p-8 shadow-lg border border-gray-800">
+                 <div class="space-y-6">
+                     <div class="skill-item">
+                         <div class="flex justify-between items-center mb-2">
+                             <span class="font-semibold text-light">HTML</span>
+                             <span class="text-gray">50%</span>
+                         </div>
+                         <div class="h-2.5 bg-gray-800 rounded-full overflow-hidden">
+                             <div class="h-full bg-accent rounded-full transition-all duration-1000 ease-in-out" style="width: 50%"></div>
+                         </div>
+                     </div>
+                     
+                     <div class="skill-item">
+                         <div class="flex justify-between items-center mb-2">
+                             <span class="font-semibold text-light">CSS</span>
+                             <span class="text-gray">50%</span>
+                         </div>
+                         <div class="h-2.5 bg-gray-800 rounded-full overflow-hidden">
+                             <div class="h-full bg-accent rounded-full transition-all duration-1000 ease-in-out" style="width: 50%"></div>
+                         </div>
+                     </div>
+                     
+                     <div class="skill-item">
+                         <div class="flex justify-between items-center mb-2">
+                             <span class="font-semibold text-light">JavaScript</span>
+                             <span class="text-gray">20%</span>
+                         </div>
+                         <div class="h-2.5 bg-gray-800 rounded-full overflow-hidden">
+                             <div class="h-full bg-accent rounded-full transition-all duration-1000 ease-in-out" style="width: 20%"></div>
+                         </div>
+                     </div>
+                     
+                     <div class="skill-item">
+                         <div class="flex justify-between items-center mb-2">
+                             <span class="font-semibold text-light">Python</span>
+                             <span class="text-gray">60%</span>
+                         </div>
+                         <div class="h-2.5 bg-gray-800 rounded-full overflow-hidden">
+                             <div class="h-full bg-accent rounded-full transition-all duration-1000 ease-in-out" style="width: 60%"></div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
 
-    <!-- Pemanggil js -->
-   <script src="js/script.js"></script>
-        </body>
+         <!-- Bagian project -->
+     <section id="projects" class="py-20 px-8">
+         <div class="max-w-6xl mx-auto">
+             <h2 class="text-4xl lg:text-5xl font-bold mb-8 text-gold relative inline-block">
+                 Projek Terbaru
+                 <div class="absolute bottom-0 left-0 w-12 h-1 bg-accent rounded"></div>
+             </h2>
+             <p class="text-gray text-lg mb-8">Beberapa projek yang saya kerjakan</p>
+             
+             <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                 <!-- Project 1 -->
+                 <div class="group relative bg-secondary rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 cursor-pointer border border-gray-800" data-project="project1">
+                     <!-- Shine Effect -->
+                     <div class="absolute inset-0 bg-gradient-to-r from-transparent via-accent/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                     
+                     <div class="h-48 overflow-hidden">
+                         <img src="images/samp.jpg" alt="Tampilan dashboard admin dengan grafik dan statistik" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                     </div>
+                     <div class="p-6">
+                         <h3 class="text-xl font-semibold mb-2 text-gold">Sistem BanAll GTA SA:MP</h3>
+                         <p class="text-gray text-sm mb-4">
+                             Sebuat Tekhnologi dasar Lua. yang memungkinkan player mem banned semua player di dalam server (admin require)
+                         </p>
+                         <div class="flex gap-4">
+                             <button class="inline-flex items-center gap-2 text-accent font-medium text-sm hover:text-gold transition-colors duration-300 view-project">
+                                 <i class="fas fa-eye"></i> Lihat Detail
+                             </button>
+                             <a href="https://github.com/ahm4d-putra/Banned-All" class="inline-flex items-center gap-2 text-accent font-medium text-sm hover:text-gold transition-colors duration-300" target="_blank">
+                                 <i class="fab fa-github"></i> Code
+                             </a>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 <!-- Project 2 -->
+                 <div class="group relative bg-secondary rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 cursor-pointer border border-gray-800" data-project="project2">
+                     <!-- Shine Effect -->
+                     <div class="absolute inset-0 bg-gradient-to-r from-transparent via-accent/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                     
+                     <div class="h-48 overflow-hidden">
+                         <img src="images/judjud.jpg" alt="Antarmuka e-commerce dengan produk yang ditampilkan dalam grid" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                     </div>
+                     <div class="p-6">
+                         <h3 class="text-xl font-semibold mb-2 text-gold">Demonstrasi Judi Online</h3>
+                         <p class="text-gray text-sm mb-4">
+                             Sebuah sosialisasi penanggulangan judi online, demo ini menggunakan python3, INI CUMA SIMULASI BERBASIS TERMINAL.
+                         </p>
+                         <div class="flex gap-4">
+                             <button class="inline-flex items-center gap-2 text-accent font-medium text-sm hover:text-gold transition-colors duration-300 view-project">
+                                 <i class="fas fa-eye"></i> Lihat Detail
+                             </button>
+                             <a href="https://github.com/ahm4d-putra/SimulasiJudol" class="inline-flex items-center gap-2 text-accent font-medium text-sm hover:text-gold transition-colors duration-300" target="_blank">
+                                 <i class="fab fa-github"></i> Code
+                             </a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+            
+                         <!-- Project Modals -->
+             <div class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 opacity-0 invisible transition-all duration-300" id="project-modal">
+                 <div class="bg-secondary rounded-2xl max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto border border-gray-800">
+                     <div class="p-8">
+                         <div class="flex justify-between items-start mb-6">
+                             <h3 class="text-3xl font-bold text-gold" id="modal-title"></h3>
+                             <button class="text-2xl text-gray-400 hover:text-accent transition-colors" id="close-modal">
+                                 <i class="fas fa-times"></i>
+                             </button>
+                         </div>
+                         <div class="grid md:grid-cols-2 gap-8">
+                             <div>
+                                 <img id="modal-image" src="" alt="" class="w-full rounded-lg shadow-lg">
+                             </div>
+                             <div>
+                                 <h4 class="text-xl font-semibold mb-4 text-accent">Deskripsi Project</h4>
+                                 <p id="modal-description" class="text-gray mb-6"></p>
+                                 
+                                 <h4 class="text-xl font-semibold mb-4 text-accent">Teknologi yang Digunakan</h4>
+                                 <div id="modal-tech" class="flex flex-wrap gap-2 mb-6"></div>
+                                 
+                                 <h4 class="text-xl font-semibold mb-4 text-accent">Fitur Utama</h4>
+                                 <ul id="modal-features" class="text-gray mb-6 space-y-2"></ul>
+                                 
+                                 <div class="flex gap-4">
+                                     <a id="modal-github" href="" class="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 rounded-lg hover:bg-accent/80 transition-colors duration-300" target="_blank">
+                                         <i class="fab fa-github"></i> Lihat Code
+                                     </a>
+                                     <a id="modal-demo" href="" class="inline-flex items-center gap-2 border-2 border-accent text-accent px-6 py-3 rounded-lg hover:bg-accent hover:text-white transition-colors duration-300" target="_blank">
+                                         <i class="fas fa-external-link-alt"></i> Demo Live
+                                     </a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </section>
+
+         <!-- Bagian kontak -->
+     <section id="contact" class="py-20 px-8">
+         <div class="max-w-6xl mx-auto">
+             <h2 class="text-4xl lg:text-5xl font-bold mb-8 text-gold relative inline-block">
+                 Hubungi Saya
+                 <div class="absolute bottom-0 left-0 w-12 h-1 bg-accent rounded"></div>
+             </h2>
+             <p class="text-gray text-lg mb-8">Silakan hubungi saya melalui formulir berikut atau media sosial</p>
+             
+             <div class="grid md:grid-cols-2 gap-8">
+                 <div>
+                     <form id="contact-form" class="space-y-4">
+                         <input type="text" placeholder="Nama Anda" class="w-full p-4 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent bg-secondary text-light" required>
+                         <input type="email" placeholder="Email Anda" class="w-full p-4 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent bg-secondary text-light" required>
+                         <textarea placeholder="Pesan Anda" class="w-full p-4 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent min-h-36 resize-none bg-secondary text-light" required></textarea>
+                         <button type="submit" class="w-full bg-accent text-white p-4 rounded-lg cursor-pointer transition-all duration-300 hover:bg-accent/80 transform hover:-translate-y-1 shadow-lg shadow-accent/25">
+                             Kirim Pesan
+                         </button>
+                     </form>
+                 </div>
+                 <div class="space-y-6">
+                     <div class="flex items-center gap-3">
+                         <i class="fas fa-envelope text-accent text-xl"></i>
+                         <p class="text-gray">ahmad.putra494@smp.belajar.id</p>
+                     </div>
+                     <div class="flex items-center gap-3">
+                         <i class="fas fa-phone text-accent text-xl"></i>
+                         <p class="text-gray">+62 895-0152-4223</p>
+                     </div>
+                     
+                     <div class="flex gap-6 mt-8">
+                         <a href="https://instagram.com/ahmaddd9_" class="w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center text-xl transition-all duration-300 hover:bg-accent/80 hover:-translate-y-1 shadow-lg shadow-accent/25" target="_blank">
+                             <i class="fab fa-instagram"></i>
+                         </a>
+                         <a href="https://github.com/ahm4d-putra" class="w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center text-xl transition-all duration-300 hover:bg-accent/80 hover:-translate-y-1 shadow-lg shadow-accent/25" target="_blank">
+                             <i class="fab fa-github"></i>
+                         </a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+         <!-- Footer -->
+     <footer class="bg-primary text-light text-center py-8 border-t border-gray-800">
+         <p>&copy; 2025, Ahmad Putra Ramadhan</p>
+     </footer>
+ 
+     <!-- Back to top button -->
+     <a href="#home" class="fixed bottom-8 right-8 w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center text-xl opacity-0 invisible transition-all duration-300 hover:bg-accent/80 transform hover:-translate-y-1 cursor-pointer shadow-lg shadow-accent/25" id="back-to-top">
+         <i class="fas fa-arrow-up"></i>
+     </a>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
 </html>
 
